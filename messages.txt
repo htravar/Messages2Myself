@@ -1,0 +1,27 @@
+#!/bin/bash
+#generate a random number, 0-4
+#whatever number, display the string for that index place in the array
+MSG1='You made the right decision.'
+MSG2='Do not second guess yourself.'
+MSG3='Trust your gut.'
+MSG4='Because it hurts, does not mean it was the wrong choice.'
+MSG5='Family first.'
+
+#4 is not included, add +1 outside most inner ')' to included 4
+RANDVAR=$(( ( $RANDOM % 4 ) ))
+
+if [ $RANDVAR -eq 0 ]
+then
+ echo $MSG1
+elif [ $RANDVAR -eq 1 ]
+then
+ echo $MSG2
+elif [ $RANDVAR -eq 2 ]
+then
+ echo $MSG3
+elif [ $RANDVAR -eq 3 ]
+then
+ echo $MSG4
+else
+ echo $MSG5
+fi
