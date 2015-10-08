@@ -1,6 +1,6 @@
 #!/bin/bash
-#generate a random number, 0-4
-#whatever number, display the string for that index place in the array
+#uncomment next line when you enter correct path
+#echo source /path/to/script >> ~/.bashrc
 MSG1='You made the right decision.'
 MSG2='Do not second guess yourself.'
 MSG3='Trust your gut.'
